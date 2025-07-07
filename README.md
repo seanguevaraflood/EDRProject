@@ -1,6 +1,6 @@
 <h1>EDR Projet</h1>
 
-<p>In this Project we are going to be using LimaCharlie as our EDR to use a tool to recover passwords. Then it will be sent to our SIEM on Tines, which will then forward the playbook to Slack, providing an email asking the user if they want to isolate the machine. When “Yes” is selected, LimaCharlie will isolate the machine.</p>
+<p>In this project we are going to be using LimaCharlie as our EDR to use a tool to recover passwords. Then it will be sent to our SIEM on Tines, which will then forward the playbook to Slack, providing an email asking the user if they want to isolate the machine. When “Yes” is selected, LimaCharlie will isolate the machine.</p>
 
 <p>We will start by designing the playbook workflow to get a rough outline of what we want to achieve.</p>
 
