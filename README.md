@@ -16,6 +16,12 @@
 
 <p><b>Textual Diagram</b></p>
 
+https://github.com/seanguevaraflood/EDRProject/blob/db3561a222b33303ab5ccfe55f7754aaa11c44b5/EDR%20Project%20Diagram%201.png
+
+https://github.com/seanguevaraflood/EDRProject/blob/db3561a222b33303ab5ccfe55f7754aaa11c44b5/EDR%20Project%20Diagram%202.png
+
+https://github.com/seanguevaraflood/EDRProject/blob/db3561a222b33303ab5ccfe55f7754aaa11c44b5/EDR%20Project%20Diagram%203.png
+
 <p>We will create a Story in Tines.</p>
 
 <p>Create a detection rule in LimaCharlie which will Detect Hack which will then be forwarded into Slack & Email.</p>
