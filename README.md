@@ -40,6 +40,8 @@
 
 <p>In the Sensor’s tab, we will go to Installation Key. Let’s create an installation key so we can enroll our machine into LimaCharlie.</p>
 
+![image alt](![image alt](https://github.com/seanguevaraflood/EDRProject/blob/db3561a222b33303ab5ccfe55f7754aaa11c44b5/EDR%20Project%20Diagram%203.png))
+
 <p>Now that this machine is integrated into LimaCharlie, it will be listed in the Sensors List.</p>
 
 <p>We are going to customize the D&amp;R section in automation to create our custom detection and response rules.</p>
@@ -49,21 +51,33 @@
 <p>Let’s use Windows PowerShell to download the LimaCharlie agent:</p>
 <pre><code>hcp &lt;file&gt; -i</code></pre>
 
+![image alt](![image alt](https://github.com/seanguevaraflood/EDRProject/blob/5a21fe7b2835cb201887a577895d144c1caeb39c/Powershell%20LimaCharle%20Download.png)
+
 <p>Great, we have downloaded the LimaCharlie agent to our machine.</p>
 
 <p>Let’s download LaZagne as our telemetry tool.</p>
 
 <p>We can see in the Timeline section all the relevant information regarding the processes occurring on our machine.</p>
 
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/5a21fe7b2835cb201887a577895d144c1caeb39c/Timeline.png)
+
 <p>Let’s create a custom D&amp;R Rule using this information to provide a more granular approach to isolating machines.</p>
 
 <p>Let’s start with our detection rule:</p>
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/5a21fe7b2835cb201887a577895d144c1caeb39c/Detection%20Rule.png)
 
 <p>This rule starts with specifying two necessary events: either <code>New_Process</code> or <code>Existing_Processes</code>. We are using the operator to specify <code>FILE_PATH</code> ending with our program <code>lazagne.exe</code>. We then make sure to not have case sensitivity. We allow the command line to allow value as specifying “all”. Second to last, we specify the command line value to also potentially have <code>lazagne</code> without case sensitivity. Lastly, we input the specified hash of the LaZagne hash. This will allow us to cover every single detection criteria.</p>
 
 <p>Now onto the response side:</p>
 
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/5a21fe7b2835cb201887a577895d144c1caeb39c/Reponse%20Rule%201.png)
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/5a21fe7b2835cb201887a577895d144c1caeb39c/Reponse%20Rule%202.png)
+
 <p>The action will report the detection to the specified output.</p>
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/5a21fe7b2835cb201887a577895d144c1caeb39c/Detect%20and%20Respond%20Rule.png)
 
 <p>We edited some values from this template, such as the name, and took it out from reference.</p>
 
