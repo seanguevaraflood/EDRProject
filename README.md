@@ -40,7 +40,7 @@
 
 <p>In the Sensor’s tab, we will go to Installation Key. Let’s create an installation key so we can enroll our machine into LimaCharlie.</p>
 
-![image alt](![image alt](https://github.com/seanguevaraflood/EDRProject/blob/db3561a222b33303ab5ccfe55f7754aaa11c44b5/EDR%20Project%20Diagram%203.png))
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/db3561a222b33303ab5ccfe55f7754aaa11c44b5/EDR%20Project%20Diagram%203.png))
 
 <p>Now that this machine is integrated into LimaCharlie, it will be listed in the Sensors List.</p>
 
@@ -51,7 +51,7 @@
 <p>Let’s use Windows PowerShell to download the LimaCharlie agent:</p>
 <pre><code>hcp &lt;file&gt; -i</code></pre>
 
-![image alt](![image alt](https://github.com/seanguevaraflood/EDRProject/blob/5a21fe7b2835cb201887a577895d144c1caeb39c/Powershell%20LimaCharle%20Download.png)
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/5a21fe7b2835cb201887a577895d144c1caeb39c/Powershell%20LimaCharle%20Download.png)
 
 <p>Great, we have downloaded the LimaCharlie agent to our machine.</p>
 
