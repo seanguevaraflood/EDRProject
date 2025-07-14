@@ -79,45 +79,102 @@
 
 ![image alt](https://github.com/seanguevaraflood/EDRProject/blob/5a21fe7b2835cb201887a577895d144c1caeb39c/Detect%20and%20Respond%20Rule.png)
 
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/Edited%20Detection%20Rule.png
+)
+
 <p>We edited some values from this template, such as the name, and took it out from reference.</p>
 
 <p>Let’s save the rule and test the event.</p>
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/Test%20Event%20Results.png
+)
 
 <p>We tested a sample event, and the detection and response rule seems to be working great!</p>
 
 <p>Now let’s set up Slack and Tines and test the connection between LimaCharlie and Tines.</p>
 
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/Slack%20Create%20Channel.png
+)
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/Slack%20Create%20Channel.png
+)
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/Slack%20Created%20Channel.png
+)
+
+
 <p>Great, now we have a new channel.</p>
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/Slack%20Created%20Channel.png
+)
 
 <p>Now let’s set up Tines, with our Playbook or as Tines calls it, a “Story”.</p>
 
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/Tines%20Default%20Channel.png)
+
 <p>Let’s clear all the default options and build our Playbook.</p>
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/Tines%20Channel%20Created.png)
+
 
 <p>We’ll start with a Webhook to retrieve the detections.</p>
 
 <p>We’ll copy the Webhook URL into LimaCharlie.</p>
 
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/LimaCharlie%20Webhook%20URL.png)
+
+
 <p>Ok, let’s add the output.</p>
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/LimaCharlie%20Webhook%20URL.png)
 
 <p>Ok great, let’s choose detections.</p>
 
 <p>Let’s choose Tines and copy our Webhook URL to connect it.</p>
 
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/LimaCharlie%20Webhook%20URL.png)
 <p>Ok, now let’s have our Webhook response send a message to Slack via the Tines Story configuration page.</p>
 
 <p>Let’s copy and paste the Channel ID and connect Tines and Slack.</p>
 
 <p>Finally, let’s add “Send Email Action” and User Prompt so the user can choose whether or not they want to isolate the machine.</p>
 
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/LimaCharlie%20Webhook%20URL.png)
+
 <p>Now, in the event data, let’s get the values we want to forward to the Slack message and the Email and title them.</p>
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/Retrieve%20Event%20Data.png
+)
+
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/Titled%20Event%20Data.png)
+
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/SIEM%20Path%20Notation.png)
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/Titled%20SIEM%20Path%20Notation.png)
 
 <p>Let’s also add some HTML line breaks.</p>
 
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/HTML%20SIEM%20Path%20Notation.png)
+
+
 <p>Now let’s configure a Slack message if the user selects the “No” option in response to isolating the computer.</p>
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/Slack%20No%20Message.png
+)
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/No%20Option%20Boolean%20.png
+)
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/Computer%20Failed%20Isolation%20Message.png)
 
 <p>Great, now the “No” option of the Boolean is programmed.</p>
 
 <p>Let’s configure the “Yes” option of the Boolean.</p>
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/e719b9ba82196343601ba14066a4bb18bcb64cb2/Yes%20Boolean%20Description.png
+)
 
 <p>Ok, let’s now choose a LimaCharlie HTTP Request to isolate the sensor. So we copied the value into the API link to automate the isolation.</p>
 
