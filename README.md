@@ -178,10 +178,24 @@
 
 <p>Ok, let’s now choose a LimaCharlie HTTP Request to isolate the sensor. So we copied the value into the API link to automate the isolation.</p>
 
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/348bfe48eb4763f02e838a878903833248f4c455/HTTP%20Isolate%20Sensor%20URL.png
+)
+
+
 <p>LimaCharlie’s API requires credentials, so let’s get our organization API credential key from LimaCharlie and add the credential to Tines.</p>
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/348bfe48eb4763f02e838a878903833248f4c455/LimaCharlie%20Organization%20Key.png
+)
 
 <p>Ok, now we have credentials for our HTTP Request isolation of the sensor.</p>
 
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/348bfe48eb4763f02e838a878903833248f4c455/Network%20Isolation%20Status.png
+)
+
 <p>Great, it worked. It has successfully isolated the computer from the network. Let’s test one final ping to the public internet to confirm the computer has been isolated from the internet.</p>
+
+![image alt](https://github.com/seanguevaraflood/EDRProject/blob/348bfe48eb4763f02e838a878903833248f4c455/Ping%20Failure.png
+)
 
 <p>Perfect, the ping also confirms it is isolated.</p>
